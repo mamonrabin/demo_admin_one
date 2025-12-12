@@ -5,7 +5,7 @@ import React from 'react';
 
 const page = () => {
     return (
-        <div className='lg:p-6 border rounded mt-4'>
+        <div className='lg:p-6 border rounded my-4'>
             <h1 className='text-base capitalize font-medium'>order managment</h1>
             <OrderTab/>
             <div className='mt-6'>
