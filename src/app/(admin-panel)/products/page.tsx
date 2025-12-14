@@ -1,9 +1,11 @@
+
+import ProductManagement from '@/src/components/product/product-management/ProductManagement';
 import React from 'react';
 
 const page = () => {
     return (
-        <div>
-            <h2>this is products</h2>
+       <div className='lg:px-6 px-4 py-6 border rounded my-4'>
+            <ProductManagement/>
         </div>
     );
 };
