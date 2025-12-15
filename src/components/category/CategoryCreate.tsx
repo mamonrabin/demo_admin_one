@@ -8,9 +8,9 @@ const CategoryCreate = () => {
 
       <form className="mt-4 ">
         <div className="flex lg:flex-row flex-col items-start gap-4">
-          <div className="flex flex-col gap-1 md:w-120 w-full">
-            <label>
-              Category Name <span>*</span>
+          <div className="flex flex-col gap-2 md:w-120 w-full">
+            <label className="text-sm">
+              Category Name <span className="text-red-500">*</span>
             </label>
             <input
               className="px-4 py-2 border outline-none text-sm rounded"
@@ -18,8 +18,8 @@ const CategoryCreate = () => {
               placeholder="Enter Category Name"
             />
           </div>
-          <div className="flex flex-col gap-1">
-            <label className="font-medium">
+          <div className="flex flex-col gap-2">
+            <label className="font-medium text-sm">
               Image <span className="text-red-500">*</span>
             </label>
 
@@ -42,7 +42,7 @@ const CategoryCreate = () => {
             />
           </div>
         </div>
-        <div className="lg:mt-[-90px]">
+        <div className="lg:-mt-22.5">
           <button
             className="mt-6 px-6 py-2 bg-[#2B748A] text-white rounded hover:bg-[#2383a0] transition cursor-pointer"
           type="submit">Create</button>

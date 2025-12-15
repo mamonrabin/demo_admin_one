@@ -1,36 +1,24 @@
-"use client"
+"use client";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import TiptapEditor from "../../editor/TiptapEditor";
 import { useState } from "react";
+import TiptapEditor from "../../editor/TiptapEditor";
 import { Upload } from "lucide-react";
-import { DiscountType } from "../create-product/DiscountType";
-import { ShippingFee } from "../create-product/ShippingFee";
-import { CCategorySelector } from "../create-product/CCategorySelector";
-import { SCCategorySelector } from "../create-product/SCCategorySelector";
-import { ChildCSelector } from "../create-product/ChildCSelector";
-import { CreateInventeryType } from "../create-product/CreateInventeryType";
+import { DiscountType } from "./DiscountType";
+import { ShippingFee } from "./ShippingFee";
+import { CCategorySelector } from "./CCategorySelector";
+import { SCCategorySelector } from "./SCCategorySelector";
+import { ChildCSelector } from "./ChildCSelector";
+import { CreateInventeryType } from "./CreateInventeryType";
 import Link from "next/link";
 
-
-const ProductUpdate = () => {
+export default function CreateProduct() {
   const [description, setDescription] = useState("");
-  return (
-    <div>
-      <Sheet>
-        <SheetTrigger>
-             <button className="bg-[#2B748A] flex items-center gap-0.5 hover:bg-[#2b86a1] duration-300 cursor-pointer text-white px-4 py-2 rounded text-sm">
-                  Update
-                </button>
-        </SheetTrigger>
-        <SheetContent className="md:max-w-4xl p-8 overflow-y-auto">
 
-          <h2>Product Details</h2>
-            <form className="mt-4 flex flex-col gap-6">
+  return (
+    <div className="rounded border p-8">
+      <h2 className="text-xl font-medium">Create Product</h2>
+
+      <form className="mt-4 flex flex-col gap-6">
         {/* Product Name */}
         <div className="flex flex-col gap-2">
           <label className="text-sm font-medium">
@@ -180,10 +168,6 @@ const ProductUpdate = () => {
           </Link>
         </div>
       </form>
-        </SheetContent>
-      </Sheet>
     </div>
   );
-};
-
-export default ProductUpdate;
+}
