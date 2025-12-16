@@ -50,7 +50,7 @@ const EditCategory = () => {
                   />
                 </div>
               </div>
-              <div className="lg:mt-[-90px]">
+              <div className="lg:-mt-22.5">
                 <button
                   className="mt-6 px-6 py-2 bg-[#2B748A] text-white rounded hover:bg-[#2383a0] transition cursor-pointer"
                   type="submit"
