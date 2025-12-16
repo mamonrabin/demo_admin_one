@@ -18,7 +18,7 @@ export function CampaignCouponSelector() {
       </p>
       <Select>
         <SelectTrigger className="md:w-80 w-full h-10! rounded py-1">
-          <SelectValue placeholder="Select Discount Type" />
+          <SelectValue placeholder="Select Coupon" />
         </SelectTrigger>
         <SelectContent className="">
           <SelectGroup className="text-sm">
