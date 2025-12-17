@@ -11,8 +11,8 @@ import {
 
 import Image from "next/image";
 import OPagination from "../order/OPagination";
-import EditCategory from "../category/EditCategory";
 import { bannerList } from "@/src/api/bannerApi";
+import UpdateBanner from "./UpdateBanner";
 
 const BannerList = () => {
   return (
@@ -61,7 +61,7 @@ const BannerList = () => {
                   <button className="bg-red-500 hover:bg-red-700 duration-300 cursor-pointer text-white px-4 py-2 rounded text-sm">
                     Delete
                   </button>
-                  <EditCategory />
+                  <UpdateBanner/>
                 </TableCell>
               </TableRow>
             ))}
